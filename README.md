@@ -9,7 +9,8 @@ Chatgpt 기반 단어 추천 마인드맵 ‘마인드맵크래프트’를 소�
 Introducing ‘Mind Map Craft’, a Chatgpt-based word recommendation mind map. The service is a site that creates mind maps, and is designed to allow you to fill out the mind map by receiving recommendations of reminiscent words from Chatgpt.
 
 ### 시연영상
-[![유튜브시연영상](https://github.com/gyur2/Webclient/assets/66067610/c499637b-cc76-4e8c-88da-13cd41372f07)
+[![메인](https://github.com/gyur2/Webclient/assets/66067610/94646d88-1141-48ed-a6c5-b41d57a6a1c5)
+
 ](https://youtu.be/JDJnL4IK7MM))
 [마인드맵크래프트 실행영상보러가기](https://youtu.be/JDJnL4IK7MM))
 
