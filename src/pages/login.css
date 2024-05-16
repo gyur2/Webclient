@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+}
+
+.tips-container {
+  width: 70%;
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.tips-image {
+  width: 100%;
+  height: auto;
+}
+
+
+.brand {
+  width: 150px;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+
+.title {
+  margin-right: auto;
+  margin-top: 10%;
+  font-size: 36px;
+}
+
+.form-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.normalbutton {
+  background-color: rgb(9, 180, 29);
+  border-radius: 20px;
+  cursor: pointer;
+  height: 80px;
+  font-size: 24px;
+  color: white;
+  width: flex;
+
+}
+
+.normalbutton:hover {
+  background-color: rgb(6, 102, 33);
+  border-radius: 20px;
+  cursor: pointer;
+  height: 80px;
+  font-size: 24px;
+  color: white;
+  width: flex;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: flex;
+  font-size: 24px;
+}
+
+.Inputform {
+  width: flex;
+  height: 60px;
+  border-radius: 20px;
+  background-color: var(--color-gray);
+  align-self: stretch;
+  border-radius: var(--br-mini);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  outline-color: none;
+  padding: var(--padding-mid) var(--padding-3xl);
+  box-sizing: border-box;
+  font-size: 24px;
+  margin-bottom: 3%;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  object-fit: cover;
+  margin-top: 90%;
+}
+
+
+.go-signup {
+  cursor: pointer;
+  width: 400px;
+  align-items: center;
+
+}
+
+.go-signup:hover {
+  color: rgb(0, 255, 119);
+}
+
+@media (max-width: 768px) {
+  .tip-image {
+    display: none;
+  }
+}
