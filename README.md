@@ -1,6 +1,6 @@
 # MindMapCraft
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+해당 프로젝트는 2024년 1학기 웹클라이언트 과목의 과제로 제작되었습니다.
 
 ## 소개
 Chatgpt 기반 단어 추천 마인드맵 ‘마인드맵크래프트’를 소개합니다. 서비스는 마인드맵을 제작하는 사이트로써, Chatgpt로부터 연상되는 단어들을 추천받아 마인드맵을 채워 나갈 수 있도록 기획하였습니다.
@@ -25,10 +25,7 @@ Introducing ‘Mind Map Craft’, a Chatgpt-based word recommendation mind map. 
 ## 주요화면 
 | 로그인 | 캔버스 | 메인화면 |
 |---|---|---|
-|![image](https://github.com/gyur2/Webclient/assets/66067610/5e7abb03-5aae-4c96-a3a8-e10c71d6000c)
-|![canvas](https://github.com/gyur2/Webclient/assets/66067610/f0ac2259-a97c-4445-a98e-1fe4f3111c87)
-|![메인](https://github.com/gyur2/Webclient/assets/66067610/fbe1a52c-4cdd-489c-9230-60ead058aa13)
-|
+|![image](https://github.com/gyur2/Webclient/assets/66067610/5e7abb03-5aae-4c96-a3a8-e10c71d6000c)|![canvas](https://github.com/gyur2/Webclient/assets/66067610/f0ac2259-a97c-4445-a98e-1fe4f3111c87)|![메인](https://github.com/gyur2/Webclient/assets/66067610/fbe1a52c-4cdd-489c-9230-60ead058aa13)|
 
 ## 주요기능
 로그인화면 - 로그인 기능을 수행합니다.
