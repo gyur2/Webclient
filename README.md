@@ -28,7 +28,7 @@ Introducing ‘Mind Map Craft’, a Chatgpt-based word recommendation mind map. 
 |![image](https://github.com/gyur2/Webclient/assets/66067610/5e7abb03-5aae-4c96-a3a8-e10c71d6000c)|![canvas](https://github.com/gyur2/Webclient/assets/66067610/f0ac2259-a97c-4445-a98e-1fe4f3111c87)|![메인](https://github.com/gyur2/Webclient/assets/66067610/fbe1a52c-4cdd-489c-9230-60ead058aa13)|
 
 ## 주요기능
-로그인화면 - 로그인 기능을 수행합니다.
-회원가입화면 -회원가입 기능을 수행합니다.
-메인화면 - 로그인, 회원가입, 캔버스 화면으로 이동할 수 있습니다.
+로그인화면 - 로그인 기능을 수행합니다.\
+회원가입화면 -회원가입 기능을 수행합니다.\
+메인화면 - 로그인, 회원가입, 캔버스 화면으로 이동할 수 있습니다.\
 캔버스화면 - 마인드맵을 만들고 저장할 수 있습니다. 저장된 마인드맵은 서버로부터 불러올 수 있습니다. 현재 상태의 마인드맵을 캡쳐하여 저장할 수 있습니다. 
