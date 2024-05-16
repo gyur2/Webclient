@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Root from './App'; // App 대신 Root를 가져옵니다.
 import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Root />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+reportWebVitals();

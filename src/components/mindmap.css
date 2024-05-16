@@ -81,7 +81,8 @@
 }
 
 .save-button,
-.capture-button {
+.capture-button,
+.load-button {
     background: white;
     border: none;
     cursor: pointer;
@@ -96,4 +97,24 @@
 .save-button:hover,
 .capture-button:hover {
     background: #f0f0f0;
+}
+
+.suggestions {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.suggestions li {
+    padding: 5px 0;
 }

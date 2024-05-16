@@ -1,7 +1,6 @@
 .container {
   display: flex;
-  align-items: center;
-  height: 100vh;
+
   font-size: 24px;
 }
 
@@ -19,6 +18,7 @@
 
 
 .brand {
+  margin-top: 20px;
   width: 150px;
   margin-bottom: 20px;
   margin-left: auto;
@@ -40,24 +40,20 @@
 }
 
 .normalbutton {
-  background-color: rgb(9, 180, 29);
+
+  background-color: rgb(29, 191, 75);
   border-radius: 20px;
+  width: 100%;
   cursor: pointer;
-  height: 80px;
+  height: 60px;
   font-size: 24px;
   color: white;
   width: flex;
-
+  margin-bottom: 20px;
 }
 
 .normalbutton:hover {
   background-color: rgb(6, 102, 33);
-  border-radius: 20px;
-  cursor: pointer;
-  height: 80px;
-  font-size: 24px;
-  color: white;
-  width: flex;
 }
 
 .form-container form {
@@ -69,22 +65,17 @@
 }
 
 .Inputform {
-  width: flex;
+  width: 100%;
+  margin-bottom: 15px;
   height: 60px;
   border-radius: 20px;
-  background-color: var(--color-gray);
-  align-self: stretch;
-  border-radius: var(--br-mini);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  background-color: rgb(237, 236, 236);
   outline-color: none;
-  padding: var(--padding-mid) var(--padding-3xl);
-  box-sizing: border-box;
   font-size: 24px;
-  margin-bottom: 3%;
 }
+
+
+
 
 .logo {
   width: 100px;
@@ -107,11 +98,16 @@
 }
 
 .go-signup:hover {
-  color: rgb(0, 255, 119);
+  color: rgb(29, 191, 75);
 }
 
 @media (max-width: 768px) {
   .tip-image {
     display: none;
+  }
+
+  .form-container {
+    width: 100%;
+
   }
 }

@@ -1,26 +1,72 @@
+import { useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./home.css";
-import { useCallback } from "react";
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { authService } from "../autho";
+import './home.css';
 
 const Home = () => {
+    const [user, setUser] = useState(null);
     const navigate = useNavigate();
+
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(authService, (user) => {
+            if (user) {
+                setUser(user);
+            } else {
+                setUser(null);
+            }
+        });
+        return () => unsubscribe();
+    }, []);
+
     const gologinClick = useCallback(() => {
         navigate("/login");
-    }, []);
+    }, [navigate]);
 
     const onGroupButtonClick = useCallback(() => {
         navigate("/signup");
-    }, []);
+    }, [navigate]);
+
     const goCanvasClick = useCallback(() => {
-        navigate("/canvas");
-    }, []);
+        if (user) {
+            navigate("/canvas");
+        } else {
+            const confirmSignup = window.confirm("회원가입을 하셔야 합니다. 회원가입 페이지로 이동하시겠습니까?");
+            if (confirmSignup) {
+                navigate("/signup");
+            }
+        }
+    }, [user, navigate]);
+
+    const handleLogoutClick = useCallback(async () => {
+        const confirmLogout = window.confirm("로그아웃 하시겠습니까?");
+        if (confirmLogout) {
+            try {
+                await signOut(authService);
+                setUser(null); // 로그아웃 후 사용자 상태 업데이트
+                navigate("/login"); // 로그아웃 후 로그인 페이지로 이동
+            } catch (error) {
+                console.error("로그아웃 실패:", error);
+            }
+        }
+    }, [navigate]);
+
     return (
         <div className="home-container">
             <header className="home-header">
                 <img src="/mindmapcraft.png" alt="Minecraft Icon" className="minecraft-icon" />
                 <div className="auth-buttons">
-                    <button className="login-button" onClick={gologinClick}>로그인</button>
-                    <button className="signup-button" onClick={onGroupButtonClick}>회원가입</button>
+                    {user ? (
+                        <div className="user-info" onClick={handleLogoutClick}>
+                            <span>{user.displayName || user.email}</span>
+                            <img src="/mindmapcraft_LOGO.png" alt="User Icon" className="user-icon" />
+                        </div>
+                    ) : (
+                        <>
+                            <button className="login-button" onClick={gologinClick}>로그인</button>
+                            <button className="signup-button" onClick={onGroupButtonClick}>회원가입</button>
+                        </>
+                    )}
                 </div>
             </header>
             <main className="home-main">
@@ -59,7 +105,7 @@ const Home = () => {
                             <p>추천받으므로써 시간과 노력을 절약</p>
                         </div>
                         <div className="advantage-item">
-                            <img src="magic.png" alt="개인화" />
+                            <img src="/magic.png" alt="개인화" />
                             <h3>개인화</h3>
                             <p>스스로에게 적합한 단어를 추천</p>
                         </div>

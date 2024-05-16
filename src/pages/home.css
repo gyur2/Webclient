@@ -11,6 +11,12 @@
     background-color: #f8f8f8;
 }
 
+.user-icon {
+    margin: 2px;
+    width: 45px;
+    height: auto;
+}
+
 .minecraft-icon {
     width: 18%;
     height: auto;
@@ -38,6 +44,7 @@
 .login-button {
     background-color: transparent;
     color: #6CBB3C;
+    font-size: 18px;
 }
 
 .login-button:hover {
@@ -50,6 +57,7 @@
     color: white;
     border-radius: 20px;
     align-items: right;
+    font-size: 18px;
 }
 
 .signup-button:hover {
