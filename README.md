@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# MindMapCraft
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## 소개
+Chatgpt 기반 단어 추천 마인드맵 ‘마인드맵크래프트’를 소개합니다. 서비스는 마인드맵을 제작하는 사이트로써, Chatgpt로부터 연상되는 단어들을 추천받아 마인드맵을 채워 나갈 수 있도록 기획하였습니다.
 
-In the project directory, you can run:
+## Abstract
+Introducing ‘Mind Map Craft’, a Chatgpt-based word recommendation mind map. The service is a site that creates mind maps, and is designed to allow you to fill out the mind map by receiving recommendations of reminiscent words from Chatgpt.
 
-### `npm start`
+### 시연영상
+[![유튜브시연영상](https://github.com/gyur2/Webclient/assets/66067610/c499637b-cc76-4e8c-88da-13cd41372f07)
+](https://youtu.be/JDJnL4IK7MM))
+[마인드맵크래프트 실행영상보러가기](https://youtu.be/JDJnL4IK7MM))
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 실행
+### 링크로 접속하기
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[마인드맵크래프트 체험하러 가기](https://mindmapcraft.web.app/
+) 
 
-### `npm test`
+### 파일을 내려받아 실행하기
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 주요화면 
+| 로그인 | 캔버스 | 메인화면 |
+|---|---|---|
+|![image](https://github.com/gyur2/Webclient/assets/66067610/5e7abb03-5aae-4c96-a3a8-e10c71d6000c)
+|![canvas](https://github.com/gyur2/Webclient/assets/66067610/f0ac2259-a97c-4445-a98e-1fe4f3111c87)
+|![메인](https://github.com/gyur2/Webclient/assets/66067610/fbe1a52c-4cdd-489c-9230-60ead058aa13)
+|
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 주요기능
+로그인화면 - 로그인 기능을 수행합니다.
+회원가입화면 -회원가입 기능을 수행합니다.
+메인화면 - 로그인, 회원가입, 캔버스 화면으로 이동할 수 있습니다.
+캔버스화면 - 마인드맵을 만들고 저장할 수 있습니다. 저장된 마인드맵은 서버로부터 불러올 수 있습니다. 현재 상태의 마인드맵을 캡쳐하여 저장할 수 있습니다. 
