@@ -1,6 +1,6 @@
 # MindMapCraft
 
-해당 프로젝트는 2024년 1학기 웹클라이언트 과목의 과제로 제작되었습니다.
+해당 프로젝트는 2024년 1학기 '웹클라이언트컴퓨팅'의 과제로 제작되었습니다.
 
 ## 소개
 Chatgpt 기반 단어 추천 마인드맵 ‘마인드맵크래프트’를 소개합니다. 서비스는 마인드맵을 제작하는 사이트로써, Chatgpt로부터 연상되는 단어들을 추천받아 마인드맵을 채워 나갈 수 있도록 기획하였습니다.
@@ -10,8 +10,8 @@ Introducing ‘Mind Map Craft’, a Chatgpt-based word recommendation mind map. 
 
 ### 시연영상
 
-[![메인](https://github.com/gyur2/Webclient/assets/66067610/94646d88-1141-48ed-a6c5-b41d57a6a1c5)](https://youtu.be/JDJnL4IK7MM))
-[마인드맵크래프트 실행영상보러가기](https://youtu.be/JDJnL4IK7MM))
+[![메인](https://github.com/gyur2/Webclient/assets/66067610/94646d88-1141-48ed-a6c5-b41d57a6a1c5)](https://youtu.be/JDJnL4IK7MM)
+[마인드맵크래프트 실행영상보러가기](https://youtu.be/JDJnL4IK7MM)
 
 ## 실행
 ### 링크로 접속하기
