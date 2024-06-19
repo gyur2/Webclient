@@ -60,17 +60,29 @@ const MindMap = () => {
 
         // 서버로 OpenAI 요청 전송
         try {
-            const response = await fetch('http://localhost:5000/api/generate', {  // 서버 URL을 올바르게 설정
+            console.log("Sending request to OpenAI API..."); // 요청 전 로그
+            const response = await fetch('https://api.openai.com/v1/chat/completions', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`
                 },
-                body: JSON.stringify({ prompt: `Suggest 5 related words for the topic: ${node.text}` }),
+                body: JSON.stringify({
+                    model: "gpt-3.5-turbo",
+                    messages: [
+                        { role: "user", content: "바다와 관련된 단어 5개 알려줘" },
+                    ],
+                    temperature: 0.5,
+                    max_tokens: 200,
+                }),
             });
 
+            console.log("Response received:", response); // 응답 전 로그
             const data = await response.json();
-            const suggestions = data.choices[0].text.trim().split('\n').map(s => s.trim());
+            console.log("Response data:", data); // 데이터 파싱 후 로그
+            const suggestions = data.choices[0].message.content.trim().split('\n').map(s => s.trim());
             setSuggestions(suggestions);
+
         } catch (error) {
             console.error('Error fetching suggestions:', error);
             toast.error('Error fetching suggestions');
